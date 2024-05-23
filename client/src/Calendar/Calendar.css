@@ -1,0 +1,20 @@
+.rbc-header{
+    background-color: rgb(242, 235, 235);
+}
+/* Assuming the current date is represented by a div with the class "rbc-current-date" */
+.rbc-current-date {
+    position: relative;
+  }
+  
+  .rbc-current-date::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 30px; /* Adjust the size of the circle as needed */
+    height: 30px;
+    border-radius: 50%;
+    border: 2px solid #ff0000; /* Customize the color and thickness of the circle */
+    z-index: 1;
+  }
